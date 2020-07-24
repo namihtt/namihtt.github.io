@@ -1,0 +1,251 @@
+body{
+  margin: 0;
+  color: rgb(1, 15, 60);
+  background-color: white;
+}
+li{
+  list-style: none;
+  text-transform: uppercase;
+  margin: 2.5vh;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 3vh;
+}
+ul{
+  display: flex;
+  float: right;
+}
+nav{
+  position: fixed;
+  width: 100%;
+  background: rgb(1, 15, 60);
+  height: 10vh;
+}
+/* =============================================================================
+   WELCOME SECTION
+============================================================================= */
+#welcome-section{
+  height: 90vh;
+  padding-top: 10vh;
+  background-image: url('background.jpg');
+  background-size: cover;
+}
+#introduction{
+  background-color: rgb(1, 15, 60);
+  margin: 30vh 20vw 0 0;
+  display: grid;
+  grid-template-columns: 1fr 0.2fr;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lexend Zetta', sans-serif;
+  font-size: 2vw;
+  color: white;
+}
+#avatar{
+  height: 27vh;
+  margin-right: 1vw;
+}
+/* =============================================================================
+   ABOUT SECTION
+============================================================================= */
+#main{
+  margin: 0 1vw;
+}
+h1{
+  font-size: 3vw;
+  text-transform: uppercase;
+  margin-left: 2.8vw;
+  margin-top: 0;
+  padding-top: 11vh;
+}
+p{
+  font-size: 1.5vw;
+}
+span{
+  font-size: 1.5vw;
+}
+.aboutMe {
+  margin-left: 3vw;
+  margin-right: 2vw;
+  text-align: justify;
+}
+#about{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.underline{
+  margin-left: 2.5vw;
+  text-decoration: underline;
+  font-weight: bold;
+}
+#major{
+  background-color: rgb(1, 15, 60);
+  color: white;
+  padding: 0.5vw;
+  margin-left: 2vw;
+  text-align: center;
+  width: 30vw;
+}
+#skill{
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill{
+  margin: 0 0 1vw 2.5vw;
+  background-color: rgb(1, 15, 60);
+  color: white;
+  padding: 0.5vw;
+  min-width: 96px;
+  max-width: 30vw;
+}
+/* =============================================================================
+   PROJECT SECTION
+============================================================================= */
+img{
+  max-width: 25vw;
+}
+#projectsPicture{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+}
+#projectsPicture a{
+  color: rgb(1, 15, 60);
+}
+figure{
+  border: solid 0.5px rgb(1, 15, 60);
+}
+figcaption{
+  text-align: center;
+  font-size: 1.3vw;
+}
+/* =============================================================================
+   CONTACT SECTION
+============================================================================= */
+#contact-section{
+  background: rgb(1, 15, 60);
+  color: white;
+}
+#contactMethod{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contactIcon{
+  width: 3vw;
+  margin-right: 1vw;
+  margin-bottom: 2vh;
+}
+#copyright{
+  margin: 0;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+  text-align: center;
+  border-top: solid 2px white;
+}
+#copyright a {
+  margin: 0;
+  font-size: 1.5vw;
+}
+#contactH1{
+  text-align: center;
+}
+/* =============================================================================
+   MEDIA QUERIES
+============================================================================= */
+@media (max-width: 1024px) {
+  .h1Top{
+    margin-top: 5vh;
+    padding-top: 1.5vh;
+  }
+  .title{
+    font-size: 2.3vw;
+  }
+  h1{
+    font-size: 4vw;
+  }
+  p{
+    font-size: 1em;
+  }
+  span{
+    font-size: 1em;
+  }
+  #copyright a{
+    font-size: 1em;
+  }
+}
+@media (max-width: 450px) {
+  .contactIcon{
+    width: 1.5em;
+    margin-bottom: 0;
+  }
+  a{
+    font-size: 4.5vw;
+  }
+  li{
+    margin: 0 2vw;
+  }
+  nav{
+    height: 7vh;
+  }
+  .title{
+    font-size: 0.7em;
+  }
+  #avatar{
+    height: 15vh;
+  }
+  h1{
+    margin-top: 0;
+    padding-top: 8vh;
+    font-size: 5vw;
+  }
+  .h1Top{
+    padding-top: 8vh;
+  }
+  #main{
+    margin: 0 3vw;
+  }
+  #about{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #skill{
+    justify-content: center;
+  }
+  #major{
+    width: 75vw;
+    margin: 0 auto;
+  }
+  figcaption{
+    font-size: 2.3vw;
+  }
+  img{
+    max-width: 80vw;
+    margin-left: 0 auto;
+  }
+}
+@media (max-width: 414px) {
+  #avatar{
+    height: 10vh;
+  }
+}
+@media (max-width: 375px) {
+  #avatar{
+    height: 8vh;
+  }
+  .title{
+    font-size: 0.47em;
+  }
+}
+@media (max-width: 280px) {
+  nav{
+    width: 280px;
+  }
+}
